@@ -1,0 +1,84 @@
+{
+  "theme": "LIGHT",
+  "archetype": "1 (Organic & Earthy)",
+  "colors": {
+    "primary": "#D35400",
+    "primary_rgb": "211, 84, 0",
+    "secondary": "#FAF9F6",
+    "secondary_rgb": "250, 249, 246",
+    "accent": "#1A237E",
+    "accent_rgb": "26, 35, 126",
+    "neutral_dark": "#212121",
+    "neutral_light": "#E0E0E0",
+    "text_main": "#424242",
+    "text_muted": "#757575",
+    "surface_white": "#FFFFFF",
+    "surface_offwhite": "#FDFBF7"
+  },
+  "typography": {
+    "fonts_to_import": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap",
+    "heading_font": "'Cormorant Garamond', serif",
+    "body_font": "'Lato', sans-serif",
+    "base_size": "16px",
+    "h1": "clamp(2.5rem, 5vw, 4rem)",
+    "h2": "clamp(2rem, 4vw, 3rem)",
+    "h3": "clamp(1.5rem, 3vw, 2.25rem)"
+  },
+  "layout_and_spacing": {
+    "container_max_width": "1200px",
+    "section_padding": "5rem 0",
+    "card_padding": "2.5rem",
+    "border_radius": {
+      "sm": "4px",
+      "md": "8px",
+      "lg": "16px",
+      "pill": "50px"
+    },
+    "shadows": {
+      "soft": "0 10px 30px rgba(0, 0, 0, 0.05)",
+      "hover": "0 20px 40px rgba(211, 84, 0, 0.1)"
+    }
+  },
+  "media": {
+    "images": [
+      {
+        "url": "https://images.pexels.com/photos/14276252/pexels-photo-14276252.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Bronze statue of Lord Shiva as Nataraja against rustic wall",
+        "category": "hero_background"
+      },
+      {
+        "url": "https://images.pexels.com/photos/36558486/pexels-photo-36558486.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Khajuraho temple architecture with clear blue sky",
+        "category": "about_section_image"
+      },
+      {
+        "url": "https://images.pexels.com/photos/35978529/pexels-photo-35978529.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Close-up of stone carvings",
+        "category": "texture_background"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1762828397343-6286cbd33d95?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwzfHxtZWRpdGF0aW9uJTIwc2VyZW5lJTIwbmF0dXJlfGVufDB8fHx8MTc3NDkxMTA4Nnww&ixlib=rb-4.1.0&q=85",
+        "description": "Pink lotus flower",
+        "category": "blog_featured_image"
+      },
+      {
+        "url": "https://images.pexels.com/photos/32097008/pexels-photo-32097008.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Person meditating outdoors",
+        "category": "philosophy_practice"
+      }
+    ]
+  },
+  "instructions_to_main_agent": {
+    "stack": "Pure HTML, CSS, JS and Bootstrap 5 (No React, No Tailwind). Use index.html, about.html, videos.html, blog.html, post.html, contact.html. Put custom CSS in a style.css file and custom JS in script.js.",
+    "framework_integration": "Include Bootstrap 5 CSS/JS via CDN. Include FontAwesome via CDN for icons. Import the specified Google Fonts in your CSS.",
+    "global_styles": "Set the body background to the Secondary color (#FAF9F6) and text to the text_main color. Use custom CSS to override standard Bootstrap primary colors to Deep Saffron (#D35400) and link colors to Accent (#1A237E).",
+    "typography": "Apply 'Cormorant Garamond' to all headings (h1-h6) and 'Lato' to body text. Ensure headings have a tighter line-height.",
+    "navigation": "Use Bootstrap Navbar component. Make it sticky using '.sticky-top'. Use 'ॐ Shaivam' as the text logo styled elegantly with the heading font. Style the active link with an underline or the primary saffron color.",
+    "hero_section": "For the hero on index.html, use the Nataraja image as a background. Apply a dark gradient overlay (e.g., 'rgba(33, 33, 33, 0.8) to rgba(33, 33, 33, 0.4)') to guarantee readability of the Ivory/White heading and text layered on top. Use Bootstrap's container and text-center utility.",
+    "components": "For cards (Core concepts, Blogs), use Bootstrap's '.card' but remove default borders ('border-0'). Add a custom soft shadow class and on hover, slightly elevate them ('transform: translateY(-5px);') with an enhanced shadow. Add FontAwesome icons to feature cards.",
+    "video_gallery": "On videos.html, use Bootstrap's Nav tabs for categories and standard grid for video placeholder cards. You can use an iframe for placeholders or an image with a 'play' icon overlay.",
+    "forms_and_accordions": "On contact.html, use Bootstrap Forms for the contact inputs. Add a simple JS function to show a success message on submit. Use Bootstrap Accordion for FAQs.",
+    "animations_and_interactions": "In CSS, add 'html { scroll-behavior: smooth; }'. Add simple CSS transitions for hover states on buttons and cards (.3s ease).",
+    "accessibility_and_testing": "Ensure high color contrast ratios. ALL interactive elements (buttons, nav links, form inputs) MUST include a 'data-testid' attribute using kebab-case (e.g., data-testid='home-nav-link')."
+  }
+}
