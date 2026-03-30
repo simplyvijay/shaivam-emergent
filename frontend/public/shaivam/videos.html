@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Watch videos on Shaivam philosophy — introductions, deity archetypes, temple tours, and philosophical discussions.">
+  <title>Videos | Shaivam Philosophy</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg sticky-top" data-testid="main-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="index.html" data-testid="navbar-brand">ॐ Shaivam</a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-label="Toggle navigation" data-testid="navbar-toggler">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="index.html" data-page="index.html" data-testid="home-nav-link">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html" data-page="about.html" data-testid="about-nav-link">About</a></li>
+        <li class="nav-item"><a class="nav-link active" href="videos.html" data-page="videos.html" data-testid="videos-nav-link">Videos</a></li>
+        <li class="nav-item"><a class="nav-link" href="blog.html" data-page="blog.html" data-testid="blog-nav-link">Blog</a></li>
+        <li class="nav-item ms-lg-2"><a class="btn btn-saffron btn-sm" href="contact.html" data-testid="contact-nav-btn">Connect</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<section class="page-header" data-testid="videos-page-header">
+  <div class="container">
+    <span class="section-tag" style="color:rgba(211,84,0,0.85);">Watch &amp; Learn</span>
+    <h1 class="mt-2">Shaivam in Motion</h1>
+    <p class="page-subtitle">Visual explorations of philosophy, practice, and sacred spaces</p>
+  </div>
+</section>
+
+<!-- VIDEO GALLERY -->
+<section class="section-padding" data-testid="video-gallery-section">
+  <div class="container">
+
+    <!-- Category Tabs -->
+    <ul class="nav nav-tabs v-tabs" id="videoTabs" role="tablist" data-testid="video-category-tabs">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="intro-tab" data-bs-toggle="tab" data-bs-target="#intro" type="button" role="tab" aria-selected="true" data-testid="tab-introduction">Introduction</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="deities-tab" data-bs-toggle="tab" data-bs-target="#deities" type="button" role="tab" aria-selected="false" data-testid="tab-deities">Deity Archetypes</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="temples-tab" data-bs-toggle="tab" data-bs-target="#temples" type="button" role="tab" aria-selected="false" data-testid="tab-temples">Temple Tours</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="philosophy-tab" data-bs-toggle="tab" data-bs-target="#philosophy" type="button" role="tab" aria-selected="false" data-testid="tab-philosophy">Philosophical Discussions</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="practical-tab" data-bs-toggle="tab" data-bs-target="#practical" type="button" role="tab" aria-selected="false" data-testid="tab-practical">Practical Guidance</button>
+      </li>
+    </ul>
+
+    <div class="tab-content" id="videoTabContent">
+
+      <!-- INTRODUCTION TAB -->
+      <div class="tab-pane fade show active" id="intro" role="tabpanel" data-testid="panel-introduction">
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4 fade-up">
+            <div class="video-card" data-testid="video-what-is-shaivam">
+              <div class="video-thumb">
+                <img src="https://images.pexels.com/photos/14276252/pexels-photo-14276252.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="What is Shaivam?" loading="lazy">
+                <div class="v-play-btn"><i class="fa-solid fa-play ms-1"></i></div>
+                <div class="v-duration">12:34</div>
+              </div>
+              <div class="card-body">
+                <div class="v-cat-badge">Introduction</div>
+                <h4 class="card-title">What is Shaivam?</h4>
+                <p class="card-text">A comprehensive introduction to Shaivam philosophy — its origins, its core values of freedom and empathy, and its relevance to the modern seeker.</p>
+                <div class="v-meta"><i class="fa-solid fa-eye me-1"></i>4,821 views · Jan 2024</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 fade-up">
+            <div class="video-card" data-testid="video-dual-monism-explained">
+              <div class="video-thumb">
+                <img src="https://images.unsplash.com/photo-1614278016630-017112643d7f?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85" alt="Dual Monism Explained" loading="lazy">
+                <div class="v-play-btn"><i class="fa-solid fa-play ms-1"></i></div>
+                <div class="v-duration">9:18</div>
+              </div>
+              <div class="card-body">
+                <div class="v-cat-badge">Introduction</div>
+                <h4 class="card-title">Dual Monism Explained</h4>
+                <p class="card-text">An accessible exploration of Undvaitam — why reality has two complementary dimensions, and why understanding this transforms how we live.</p>
+                <div class="v-meta"><i class="fa-solid fa-eye me-1"></i>3,204 views · Jan 2024</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 fade-up">
+            <div class="video-card" data-testid="video-two-domains">
+              <div class="video-thumb">
+                <img src="https://images.unsplash.com/photo-1759990251928-6993294ad9a4?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85" alt="The Two Domains" loading="lazy">
+                <div class="v-play-btn"><i class="fa-solid fa-play ms-1"></i></div>
+                <div class="v-duration">14:05</div>
+              </div>
+              <div class="card-body">
+                <div class="v-cat-badge">Introduction</div>
+                <h4 class="card-title">Viswesam and Eshwaram: The Architecture of Reality</h4>
+                <p class="card-text">How the two encompassing domains of Shaivam — legacy and progress — work together to create a complete understanding of existence.</p>
+                <div class="v-meta"><i class="fa-solid fa-eye me-1"></i>2,560 views · Feb 2024</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DEITY ARCHETYPES TAB -->
+      <div class="tab-pane fade" id="deities" role="tabpanel" data-testid="panel-deities">
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4 fade-up">
+            <div class="video-card" data-testid="video-eshwara-parvati">
+              <div class="video-thumb">
+                <img src="https://images.pexels.com/photos/35978529/pexels-photo-35978529.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Eshwara and Parvati" loading="lazy">
+                <div class="v-play-btn"><i class="fa-solid fa-play ms-1"></i></div>
+                <div class="v-duration">18:42</div>
+              </div>
+              <div class="card-body">
+                <div class="v-cat-badge">Deity Archetypes</div>
+                <h4 class="card-title">Understanding Eshwara and Parvati</h4>
+                <p class="card-text">Exploring the divine partnership as philosophical principle — destination and path, constancy and change, the eternal and the immediate.</p>
+                <div class="v-meta"><i class="fa-solid fa-eye me-1"></i>5,103 views · Jan 2024</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 fade-up">
+            <div class="video-card" data-testid="video-ganesha">
+              <div class="video-thumb">
+                <img src="https://images.pexels.com/photos/11669683/pexels-photo-11669683.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Ganesha: Vision and Initiative" loading="lazy">
+                <div class="v-play-btn"><i class="fa-solid fa-play ms-1"></i></div>
+                <div class="v-duration">10:22</div>
+              </div>
+              <div class="card-body">
+                <div class="v-cat-badge">Deity Archetypes</div>
+                <h4 class="card-title">Ganesha: Vision and Initiative</h4>
+                <p class="card-text">How Ganesha, as the archetype of inception, teaches us to begin every endeavour with imagination that exceeds our current experience.</p>
+                <div class="v-meta"><i class="fa-solid fa-eye me-1"></i>4,290 views · Feb 2024</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 fade-up">
+            <div class="video-card" data-testid="video-subramaniam">
+              <div class="video-thumb">
+                <img src="https://images.pexels.com/photos/32692307/pexels-photo-32692307.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Subramaniam: Integrity and Transformation" loading="lazy">
+                <div class="v-play-btn"><i class="fa-solid fa-play ms-1"></i></div>
+                <div class="v-duration">13:08</div>
+              </div>
+              <div class="card-body">
+                <div class="v-cat-badge">Deity Archetypes</div>
+                <h4 class="card-title">Subramaniam: Integrity and Transformation</h4>
+                <p class="card-text">The story of Valli and Theivaanai as a map for how duty transforms desire, and how internal obstacles are overcome through purposeful action.</p>
+                <div class="v-meta"><i class="fa-solid fa-eye me-1"></i>3,710 views · Feb 2024</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 fade-up">
+            <div class="video-card" data-testid="video-nandi">
+              <div class="video-thumb">
+                <img src="https://images.unsplash.com/photo-1762828397343-6286cbd33d95?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85" alt="Nandi: The Eternal Witness" loading="lazy">
+                <div class="v-play-btn"><i class="fa-solid fa-play ms-1"></i></div>
+                <div class="v-duration">11:56</div>
+              </div>
+              <div class="card-body">
+                <div class="v-cat-badge">Deity Archetypes</div>
+                <h4 class="card-title">Nandi: The Eternal Witness</h4>
+                <p class="card-text">What does it mean to witness endlessly? Nandi's teaching on accepting the infinite nature of existence — and finding peace within it.</p>
+                <div class="v-meta"><i class="fa-solid fa-eye me-1"></i>2,988 views · Mar 2024</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 fade-up">
+            <div class="video-card" data-testid="video-navagraham">
+              <div class="video-thumb">
+                <img src="https://images.unsplash.com/photo-1726454740211-71d5907939bb?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85" alt="The Nine Perspectives" loading="lazy">
+                <div class="v-play-btn"><i class="fa-solid fa-play ms-1"></i></div>
+                <div class="v-duration">21:14</div>
+              </div>
+              <div class="card-body">
+                <div class="v-cat-badge">Deity Archetypes</div>
+                <h4 class="card-title">The Navagraham: Nine Perspectives of Consciousness</h4>
+                <p class="card-text">A comprehensive exploration of the nine modes through which consciousness engages with reality — and how developing fluidity between them defines maturity.</p>
+                <div class="v-meta"><i class="fa-solid fa-eye me-1"></i>6,142 views · Mar 2024</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TEMPLE TOURS TAB -->
+      <div class="tab-pane fade" id="temples" role="tabpanel" data-testid="panel-temples">
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4 fade-up">
+            <div class="video-card" data-testid="video-chidambaram">
+              <div class="video-thumb">
+                <img src="https://images.pexels.com/photos/36558486/pexels-photo-36558486.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Chidambaram Temple" loading="lazy">
+                <div class="v-play-btn"><i class="fa-solid fa-play ms-1"></i></div>
+                <div class="v-duration">24:37</div>
+              </div>
+              <div class="card-body">
+                <div class="v-cat-badge">Temple Tour</div>
+                <h4 class="card-title">Chidambaram Temple — Home of the Cosmic Dance</h4>
+                <p class="card-text">A virtual tour of Chidambaram, the sacred home of Nataraja (Viswesa), where the cosmic dance of Shiva is eternally performed in stone and space.</p>
+                <div class="v-meta"><i class="fa-solid fa-eye me-1"></i>8,455 views · Dec 2023</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 fade-up">
+            <div class="video-card" data-testid="video-madurai">
+              <div class="video-thumb">
+                <img src="https://images.pexels.com/photos/32692307/pexels-photo-32692307.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Madurai Meenakshi Temple" loading="lazy">
+                <div class="v-play-btn"><i class="fa-solid fa-play ms-1"></i></div>
+                <div class="v-duration">19:22</div>
+              </div>
+              <div class="card-body">
+                <div class="v-cat-badge">Temple Tour</div>
+                <h4 class="card-title">Madurai Meenakshi Temple</h4>
+                <p class="card-text">Exploring the majestic Meenakshi Amman temple — where Parvati as Meenakshi and Eshwara as Sundareshwara embody the divine partnership.</p>
+                <div class="v-meta"><i class="fa-solid fa-eye me-1"></i>6,871 views · Dec 2023</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 fade-up">
+            <div class="video-card" data-testid="video-thiruvannamalai">
+              <div class="video-thumb">
+                <img src="https://images.pexels.com/photos/11669683/pexels-photo-11669683.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Thiruvannamalai Temple" loading="lazy">
+                <div class="v-play-btn"><i class="fa-solid fa-play ms-1"></i></div>
+                <div class="v-duration">16:48</div>
+              </div>
+              <div class="card-body">
+                <div class="v-cat-badge">Temple Tour</div>
+                <h4 class="card-title">Thiruvannamalai — The Mountain of Fire</h4>
+                <p class="card-text">Arunachala, the sacred hill, and the Arunachaleswara temple — where Shiva manifests as the column of fire that illuminates all darkness.</p>
+                <div class="v-meta"><i class="fa-solid fa-eye me-1"></i>5,214 views · Jan 2024</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PHILOSOPHICAL DISCUSSIONS TAB -->
+      <div class="tab-pane fade" id="philosophy" role="tabpanel" data-testid="panel-philosophy">
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4 fade-up">
+            <div class="video-card" data-testid="video-nithyam-nilayam">
+              <div class="video-thumb">
+                <img src="https://images.unsplash.com/photo-1539748640636-6de17ddba1fd?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85" alt="Nithyam-Nilayam" loading="lazy">
+                <div class="v-play-btn"><i class="fa-solid fa-play ms-1"></i></div>
+                <div class="v-duration">17:30</div>
+              </div>
+              <div class="card-body">
+                <div class="v-cat-badge">Philosophical Discussion</div>
+                <h4 class="card-title">Nithyam-Nilayam: The Paradox of Change and Constancy</h4>
+                <p class="card-text">A deep exploration of Shaivam's most liberating insight: that everything must change AND everything is already perfect — simultaneously.</p>
+                <div class="v-meta"><i class="fa-solid fa-eye me-1"></i>4,107 views · Feb 2024</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 fade-up">
+            <div class="video-card" data-testid="video-sathyam-nisathyam">
+              <div class="video-thumb">
+                <img src="https://images.unsplash.com/photo-1614278016630-017112643d7f?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85" alt="Truth in Evolution" loading="lazy">
+                <div class="v-play-btn"><i class="fa-solid fa-play ms-1"></i></div>
+                <div class="v-duration">15:45</div>
+              </div>
+              <div class="card-body">
+                <div class="v-cat-badge">Philosophical Discussion</div>
+                <h4 class="card-title">Sathyam and Nisathyam: Truth in Evolution</h4>
+                <p class="card-text">How can truth be both objective and evolving? This discussion unpacks one of Shaivam's most sophisticated insights for ethical and intellectual life.</p>
+                <div class="v-meta"><i class="fa-solid fa-eye me-1"></i>3,580 views · Feb 2024</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 fade-up">
+            <div class="video-card" data-testid="video-goal-cycle">
+              <div class="video-thumb">
+                <img src="https://images.pexels.com/photos/14276252/pexels-photo-14276252.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="The Goal Achievement Cycle" loading="lazy">
+                <div class="v-play-btn"><i class="fa-solid fa-play ms-1"></i></div>
+                <div class="v-duration">20:11</div>
+              </div>
+              <div class="card-body">
+                <div class="v-cat-badge">Philosophical Discussion</div>
+                <h4 class="card-title">The Goal Achievement Cycle</h4>
+                <p class="card-text">Understanding the five phases of every meaningful endeavour — from Ganesha's vision to Nandi's renewal — and why success is never truly final.</p>
+                <div class="v-meta"><i class="fa-solid fa-eye me-1"></i>5,897 views · Mar 2024</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 fade-up">
+            <div class="video-card" data-testid="video-consciousness">
+              <div class="video-thumb">
+                <img src="https://images.unsplash.com/photo-1726454740211-71d5907939bb?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85" alt="Consciousness Growth" loading="lazy">
+                <div class="v-play-btn"><i class="fa-solid fa-play ms-1"></i></div>
+                <div class="v-duration">23:08</div>
+              </div>
+              <div class="card-body">
+                <div class="v-cat-badge">Philosophical Discussion</div>
+                <h4 class="card-title">Consciousness Growth and Self-Development</h4>
+                <p class="card-text">How does awareness become consciousness? This discussion maps the Shaivam understanding of how human beings grow toward fuller, freer awareness.</p>
+                <div class="v-meta"><i class="fa-solid fa-eye me-1"></i>7,320 views · Mar 2024</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRACTICAL GUIDANCE TAB -->
+      <div class="tab-pane fade" id="practical" role="tabpanel" data-testid="panel-practical">
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4 fade-up">
+            <div class="video-card" data-testid="video-daily-practices">
+              <div class="video-thumb">
+                <img src="https://images.pexels.com/photos/32097008/pexels-photo-32097008.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Daily Practices" loading="lazy">
+                <div class="v-play-btn"><i class="fa-solid fa-play ms-1"></i></div>
+                <div class="v-duration">13:25</div>
+              </div>
+              <div class="card-body">
+                <div class="v-cat-badge">Practical Guidance</div>
+                <h4 class="card-title">Daily Practices for Balanced Living</h4>
+                <p class="card-text">Concrete daily practices drawn from Shaivam philosophy — how to begin each day grounded in Tri Margam and engaged with Soujanya Margam.</p>
+                <div class="v-meta"><i class="fa-solid fa-eye me-1"></i>9,201 views · Jan 2024</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 fade-up">
+            <div class="video-card" data-testid="video-meditation">
+              <div class="video-thumb">
+                <img src="https://images.unsplash.com/photo-1762828397343-6286cbd33d95?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85" alt="Meditation Techniques" loading="lazy">
+                <div class="v-play-btn"><i class="fa-solid fa-play ms-1"></i></div>
+                <div class="v-duration">25:00</div>
+              </div>
+              <div class="card-body">
+                <div class="v-cat-badge">Practical Guidance</div>
+                <h4 class="card-title">Meditation and Contemplation Techniques</h4>
+                <p class="card-text">Shaivam-inspired contemplative practices for deepening awareness, moving between the nine Navagraham perspectives, and cultivating present-moment consciousness.</p>
+                <div class="v-meta"><i class="fa-solid fa-eye me-1"></i>11,544 views · Dec 2023</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 fade-up">
+            <div class="video-card" data-testid="video-life-transitions">
+              <div class="video-thumb">
+                <img src="https://images.pexels.com/photos/35978529/pexels-photo-35978529.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Navigating Life Transitions" loading="lazy">
+                <div class="v-play-btn"><i class="fa-solid fa-play ms-1"></i></div>
+                <div class="v-duration">16:38</div>
+              </div>
+              <div class="card-body">
+                <div class="v-cat-badge">Practical Guidance</div>
+                <h4 class="card-title">Navigating Life Transitions with Shaivam</h4>
+                <p class="card-text">How the philosophy of Dual Monism and the Goal Achievement Cycle provide a framework for moving through life's major changes with grace and clarity.</p>
+                <div class="v-meta"><i class="fa-solid fa-eye me-1"></i>6,788 views · Feb 2024</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter-section" data-testid="newsletter-section">
+  <div class="container">
+    <div class="col-lg-7 mx-auto">
+      <h3>Stay Updated on New Videos</h3>
+      <p>Subscribe to receive notifications when new videos are released, along with monthly philosophical insights.</p>
+      <form class="newsletter-form" data-testid="newsletter-form" onsubmit="handleNewsletterSubmit(event)">
+        <input type="email" placeholder="Your email address" aria-label="Email" required data-testid="newsletter-email-input">
+        <button type="submit" class="btn-saffron" data-testid="newsletter-submit-btn">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer" data-testid="site-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6"><span class="footer-brand">ॐ Shaivam</span><p>Ancient wisdom for modern life — exploring the dynamic interplay between stability and change.</p></div>
+      <div class="col-lg-2 col-md-6"><h6>Navigate</h6><ul><li><a href="index.html" data-testid="footer-home-link">Home</a></li><li><a href="about.html" data-testid="footer-about-link">About</a></li><li><a href="videos.html" data-testid="footer-videos-link">Videos</a></li><li><a href="blog.html" data-testid="footer-blog-link">Blog</a></li><li><a href="contact.html" data-testid="footer-contact-link">Contact</a></li></ul></div>
+      <div class="col-lg-3 col-md-6"><h6>Philosophy</h6><ul><li><a href="about.html#dual-monism">Dual Monism</a></li><li><a href="about.html#two-domains">The Two Domains</a></li><li><a href="about.html#three-paths">The Three Paths</a></li><li><a href="about.html#deities">Deity Archetypes</a></li></ul></div>
+      <div class="col-lg-3 col-md-6"><h6>Wisdom</h6><p class="fst-italic">"Shaivam is the constant pursuit of what we believe"</p></div>
+    </div>
+    <hr class="footer-divider">
+    <p class="footer-bottom">&copy; 2024 Shaivam Philosophy. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
