@@ -31,7 +31,7 @@ A comprehensive, multi-page static website dedicated to Shaivam philosophy — a
 | File | Title | Status |
 |------|-------|--------|
 | `index.html` | Home — Hero, Intro, 4 Concept Cards, Practice, Quote, Blog Preview, Newsletter | ✅ Done |
-| `about.html` | About — What is Shaivam, Dual Monism, Two Domains, Three Paths, Key Concepts, Deity Archetypes, Navagraham, Practice | ✅ Done |
+| `about.html` | About — What is Shaivam, Dual Monism, Two Domains, Three Paths, Key Concepts, Deity Archetypes, Navagraham, **Goal Achievement Cycle** | ✅ Done |
 | `videos.html` | Videos — 5 Bootstrap tab categories, 18 placeholder video cards | ✅ Done |
 | `blog.html` | Blog — Featured post, 6 blog cards, categories sidebar, newsletter | ✅ Done |
 | `post1.html` | Blog: Understanding Dual Monism (~1,200 words) | ✅ Done |
@@ -65,7 +65,7 @@ A comprehensive, multi-page static website dedicated to Shaivam philosophy — a
 - Sticky navbar with scroll shadow effect
 - Fully responsive layout
 
-### Key Components
+- **Goal Achievement Cycle**: 5-phase interactive pentagon infographic (Inception/Ganesha → Execution/Subramaniam → Unofficial Impact/Parvati → Official Impact/Shivam → Back to Inception), SVG arrows, hover-activated detail panel, mobile vertical flow (Feb 2026)
 - **Hero**: Nataraja background with dark gradient overlay, dual CTA buttons
 - **Core Concepts**: 4 cards with saffron left-border hover animation
 - **Dual Monism Grid**: 6 dual pair cards (Viswesam/Eshwaram, Sathyam/Nisathyam, etc.)
