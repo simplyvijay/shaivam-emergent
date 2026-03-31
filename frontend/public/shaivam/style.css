@@ -492,6 +492,52 @@ h3 { font-size: clamp(1.5rem, 3vw, 2.25rem); }
   opacity: 0.55;
 }
 
+/* ===== WISDOM CAROUSEL ===== */
+.wisdom-carousel {
+  min-height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wisdom-quote-text {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+  width: 100%;
+  margin: 0;
+}
+
+.wisdom-quote-text.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.wisdom-dots {
+  display: flex;
+  gap: 0.6rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.wisdom-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(250,249,246,0.28);
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  border: none;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.wisdom-dot.active,
+.wisdom-dot:hover {
+  background: var(--primary);
+  transform: scale(1.5);
+}
+
 /* ===== QUOTE SECTION ===== */
 .quote-section {
   background: linear-gradient(135deg, #2d1600 0%, var(--neutral-dark) 100%);

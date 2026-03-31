@@ -2,6 +2,7 @@
 function initGAC() {
   const nodes = document.querySelectorAll('.gac-node');
   const panel = document.getElementById('gacDetailPanel');
+  const section = document.getElementById('goal-cycle');
   if (!nodes.length || !panel) return;
 
   const phases = [
@@ -22,6 +23,10 @@ function initGAC() {
       keys: ['Renewal', 'Wisdom', 'New Beginnings', 'Integration'] }
   ];
 
+  let autoTimer = null;
+  let hasInteracted = false;
+  let autoPhase = 1;
+
   function activatePhase(phaseNum) {
     const p = phases[phaseNum - 1];
     nodes.forEach(n => n.classList.toggle('active', parseInt(n.dataset.phase) === phaseNum));
@@ -36,15 +41,118 @@ function initGAC() {
     panel.style.borderColor = p.color + '55';
   }
 
-  nodes.forEach(node => {
-    node.addEventListener('mouseenter', () => activatePhase(parseInt(node.dataset.phase)));
-    node.addEventListener('click', () => activatePhase(parseInt(node.dataset.phase)));
-    node.addEventListener('keydown', e => {
-      if (e.key === 'Enter' || e.key === ' ') activatePhase(parseInt(node.dataset.phase));
+  function startAutoPlay() {
+    autoPhase = 1;
+    activatePhase(autoPhase);
+    autoTimer = setInterval(function() {
+      autoPhase = (autoPhase % 5) + 1;
+      activatePhase(autoPhase);
+    }, 1800);
+  }
+
+  function stopAutoPlay() {
+    hasInteracted = true;
+    clearInterval(autoTimer);
+    autoTimer = null;
+  }
+
+  nodes.forEach(function(node) {
+    node.addEventListener('mouseenter', function() {
+      stopAutoPlay();
+      activatePhase(parseInt(node.dataset.phase));
+    });
+    node.addEventListener('click', function() {
+      stopAutoPlay();
+      activatePhase(parseInt(node.dataset.phase));
+    });
+    node.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        stopAutoPlay();
+        activatePhase(parseInt(node.dataset.phase));
+      }
     });
   });
 
-  activatePhase(1); // default to phase 1
+  // Start auto-play when section scrolls into view
+  if (section && 'IntersectionObserver' in window) {
+    var obs = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting && !hasInteracted && !autoTimer) {
+          setTimeout(startAutoPlay, 500);
+          obs.unobserve(section);
+        }
+      });
+    }, { threshold: 0.25 });
+    obs.observe(section);
+  } else {
+    activatePhase(1);
+  }
+}
+
+// ===== ROTATING WISDOM QUOTES =====
+function initWisdomQuotes() {
+  var el = document.getElementById('wisdomQuoteText');
+  var dotsEl = document.getElementById('wisdomDots');
+  if (!el || !dotsEl) return;
+
+  var quotes = [
+    "If you have the right intention, you will automatically acquire the right competency to rule the world",
+    "There is difference between \u2018Something that is beautiful\u2019 and \u2018Something I think that is beautiful\u2019 and the life is always the latter case",
+    "Humans are independent and authoritative, hence humans call him Mahadeva",
+    "Humans\u2019 problems are always humans\u2019 problems, and they care for themselves, God will only provide directions",
+    "It is not possible to lead a disciplined life without a motive",
+    "Love within the society is called Shivam, love across boundaries is called Poorvapoorvam"
+  ];
+
+  var current = 0;
+  var timer = null;
+  var paused = false;
+
+  quotes.forEach(function(_, i) {
+    var btn = document.createElement('button');
+    btn.className = 'wisdom-dot' + (i === 0 ? ' active' : '');
+    btn.setAttribute('aria-label', 'Wisdom quote ' + (i + 1));
+    btn.setAttribute('data-testid', 'wisdom-dot-' + (i + 1));
+    btn.addEventListener('click', function() { goTo(i); resetTimer(); });
+    dotsEl.appendChild(btn);
+  });
+
+  function updateDots() {
+    dotsEl.querySelectorAll('.wisdom-dot').forEach(function(d, i) {
+      d.classList.toggle('active', i === current);
+    });
+  }
+
+  function show(index) {
+    el.classList.remove('visible');
+    setTimeout(function() {
+      current = ((index % quotes.length) + quotes.length) % quotes.length;
+      el.textContent = '\u201c' + quotes[current] + '\u201d';
+      el.classList.add('visible');
+      updateDots();
+    }, 450);
+  }
+
+  function goTo(index) { show(index); }
+
+  function resetTimer() {
+    clearInterval(timer);
+    timer = setInterval(function() {
+      if (!paused) goTo(current + 1);
+    }, 5500);
+  }
+
+  // Initialise first quote
+  el.textContent = '\u201c' + quotes[0] + '\u201d';
+  el.classList.add('visible');
+  updateDots();
+  resetTimer();
+
+  var sect = el.closest('section');
+  if (sect) {
+    sect.addEventListener('mouseenter', function() { paused = true; });
+    sect.addEventListener('mouseleave', function() { paused = false; });
+  }
 }
 
 // ===== CONTACT FORM SUBMISSION =====
@@ -108,10 +216,11 @@ function initNavbarScroll() {
 }
 
 // ===== INIT =====
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function() {
   initScrollAnimations();
   initNavbarScroll();
   initGAC();
+  initWisdomQuotes();
 
   const contactForm = document.getElementById('contact-form');
   if (contactForm) contactForm.addEventListener('submit', handleContactSubmit);
