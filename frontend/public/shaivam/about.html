@@ -371,25 +371,159 @@
   </div>
 </section>
 
-<!-- SECTION 7: PRACTICE -->
-<section class="section-padding" id="practice" data-testid="practice-section">
+<!-- SECTION 7: GOAL ACHIEVEMENT CYCLE -->
+<section class="section-padding" id="goal-cycle" data-testid="goal-achievement-section">
   <div class="container">
-    <div class="row justify-content-center mb-4">
+    <div class="row justify-content-center mb-5">
       <div class="col-lg-7 text-center">
         <span class="section-tag">From Philosophy to Life</span>
-        <h2>Living Shaivam in Practice</h2>
+        <h2>Goal Achievement Cycle</h2>
         <div class="section-divider"></div>
+        <p class="text-muted-custom">Shaivam maps the universal journey of achievement onto the deity archetypes — a perpetual 5-phase cycle guiding any meaningful endeavour from vision to renewal.</p>
       </div>
     </div>
-    <div class="row g-4">
-      <div class="col-md-6 col-lg-4 fade-up"><div class="practice-item align-items-center" style="flex-direction:column;text-align:center;padding:2rem;"><div class="practice-icon mb-3"><i class="fa-solid fa-person-running"></i></div><h5>Personal Development</h5><p>Using the Goal Achievement Cycle to set meaningful intentions, work through challenges with Ganesha's vision, and renew with Nandi's acceptance.</p></div></div>
-      <div class="col-md-6 col-lg-4 fade-up"><div class="practice-item align-items-center" style="flex-direction:column;text-align:center;padding:2rem;"><div class="practice-icon mb-3"><i class="fa-solid fa-hands-holding-heart"></i></div><h5>Relationships</h5><p>Understanding the Eshwara-Parvati dynamic to honour both individual truth and shared growth in love, family, and friendship.</p></div></div>
-      <div class="col-md-6 col-lg-4 fade-up"><div class="practice-item align-items-center" style="flex-direction:column;text-align:center;padding:2rem;"><div class="practice-icon mb-3"><i class="fa-solid fa-briefcase"></i></div><h5>Professional Life</h5><p>Applying Nithyam-Nilayam to navigate ambition without anxiety — embracing necessary change while trusting in the rightness of each moment.</p></div></div>
-      <div class="col-md-6 col-lg-4 fade-up"><div class="practice-item align-items-center" style="flex-direction:column;text-align:center;padding:2rem;"><div class="practice-icon mb-3"><i class="fa-solid fa-scale-balanced"></i></div><h5>Ethical Decisions</h5><p>Using Sathyam and Nisathyam to navigate moral complexity — anchored in objective truth while remaining responsive to context.</p></div></div>
-      <div class="col-md-6 col-lg-4 fade-up"><div class="practice-item align-items-center" style="flex-direction:column;text-align:center;padding:2rem;"><div class="practice-icon mb-3"><i class="fa-solid fa-om"></i></div><h5>Spiritual Practice</h5><p>Temple visits, contemplative meditation, and the study of the Thevaram as living expressions of the philosophy, not mere ritual.</p></div></div>
-      <div class="col-md-6 col-lg-4 fade-up"><div class="practice-item align-items-center" style="flex-direction:column;text-align:center;padding:2rem;"><div class="practice-icon mb-3"><i class="fa-solid fa-balance-scale"></i></div><h5>Tradition &amp; Modernity</h5><p>The Viswesam-Eshwaram framework offers a sophisticated way to honour ancestral wisdom while fully embracing contemporary life.</p></div></div>
+
+    <!-- DESKTOP INFOGRAPHIC (lg and above) -->
+    <div class="d-none d-lg-flex justify-content-center fade-up">
+      <div class="gac-wrapper">
+
+        <!-- SVG layer: dashed track + directional arrows -->
+        <svg class="gac-svg" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <marker id="gac-arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+              <polygon points="0 0, 8 3, 0 6" fill="#D35400"/>
+            </marker>
+          </defs>
+          <!-- Circular cycle track -->
+          <circle cx="300" cy="300" r="195" fill="none" stroke="rgba(211,84,0,0.18)" stroke-width="1.5" stroke-dasharray="9 5"/>
+          <!-- Arrow 1 → 2 (Inception → Execution) -->
+          <line x1="349" y1="140" x2="437" y2="205" stroke="#D35400" stroke-width="2" stroke-dasharray="5 3" marker-end="url(#gac-arrow)" opacity="0.55"/>
+          <!-- Arrow 2 → 3 (Execution → Unofficial Impact) -->
+          <line x1="467" y1="297" x2="433" y2="401" stroke="#D35400" stroke-width="2" stroke-dasharray="5 3" marker-end="url(#gac-arrow)" opacity="0.55"/>
+          <!-- Arrow 3 → 4 (Unofficial → Official Impact) -->
+          <line x1="355" y1="458" x2="245" y2="458" stroke="#D35400" stroke-width="2" stroke-dasharray="5 3" marker-end="url(#gac-arrow)" opacity="0.55"/>
+          <!-- Arrow 4 → 5 (Official Impact → Back to Inception) -->
+          <line x1="167" y1="401" x2="133" y2="297" stroke="#D35400" stroke-width="2" stroke-dasharray="5 3" marker-end="url(#gac-arrow)" opacity="0.55"/>
+          <!-- Arrow 5 → 1 (Back to Inception → Inception) -->
+          <line x1="164" y1="205" x2="252" y2="140" stroke="#D35400" stroke-width="2" stroke-dasharray="5 3" marker-end="url(#gac-arrow)" opacity="0.55"/>
+        </svg>
+
+        <!-- Central Hub -->
+        <div class="gac-hub">
+          <div class="gac-hub-om">ॐ</div>
+          <div class="gac-hub-text">Goal<br>Achievement<br>Cycle</div>
+        </div>
+
+        <!-- Phase 1: Inception — top (300, 105) -->
+        <div class="gac-node" data-phase="1" style="top:40px;left:235px;" tabindex="0" role="button" aria-label="Phase 1: Inception — Ganesha">
+          <div class="gac-node-num" style="background:#D35400">1</div>
+          <div class="gac-node-deity">Ganesha</div>
+          <div class="gac-node-phase">Inception</div>
+          <div class="gac-node-icon"><i class="fa-solid fa-lightbulb"></i></div>
+        </div>
+
+        <!-- Phase 2: Execution — right-top (485, 240) -->
+        <div class="gac-node" data-phase="2" style="top:175px;left:420px;" tabindex="0" role="button" aria-label="Phase 2: Execution — Subramaniam">
+          <div class="gac-node-num" style="background:#8B1A1A">2</div>
+          <div class="gac-node-deity">Subramaniam</div>
+          <div class="gac-node-phase">Execution</div>
+          <div class="gac-node-icon"><i class="fa-solid fa-bolt"></i></div>
+        </div>
+
+        <!-- Phase 3: Unofficial Impact — right-bottom (415, 458) -->
+        <div class="gac-node" data-phase="3" style="top:393px;left:350px;" tabindex="0" role="button" aria-label="Phase 3: Unofficial Impact — Parvati">
+          <div class="gac-node-num" style="background:#B8860B">3</div>
+          <div class="gac-node-deity">Parvati</div>
+          <div class="gac-node-phase">Unofficial<br>Impact</div>
+          <div class="gac-node-icon"><i class="fa-solid fa-seedling"></i></div>
+        </div>
+
+        <!-- Phase 4: Official Impact — left-bottom (185, 458) -->
+        <div class="gac-node" data-phase="4" style="top:393px;left:120px;" tabindex="0" role="button" aria-label="Phase 4: Official Impact — Shivam">
+          <div class="gac-node-num" style="background:#1A237E">4</div>
+          <div class="gac-node-deity">Shivam</div>
+          <div class="gac-node-phase">Official<br>Impact</div>
+          <div class="gac-node-icon"><i class="fa-solid fa-star"></i></div>
+        </div>
+
+        <!-- Phase 5: Back to Inception — left-top (115, 240) -->
+        <div class="gac-node" data-phase="5" style="top:175px;left:50px;" tabindex="0" role="button" aria-label="Phase 5: Back to Inception — Ganesha Renewed">
+          <div class="gac-node-num" style="background:#2D6A4F">5</div>
+          <div class="gac-node-deity">Ganesha<br>(Renewed)</div>
+          <div class="gac-node-phase">Back to<br>Inception</div>
+          <div class="gac-node-icon"><i class="fa-solid fa-rotate"></i></div>
+        </div>
+
+      </div>
     </div>
-    <div class="text-center mt-4"><a href="blog.html" class="btn-saffron" data-testid="explore-blog-btn">Explore Practical Guidance</a></div>
+
+    <!-- MOBILE VERTICAL FLOW (below lg) -->
+    <div class="d-lg-none gac-mobile fade-up">
+      <div class="gac-mobile-step" data-phase="1">
+        <div class="gac-mobile-badge" style="background:#D35400">1</div>
+        <div class="gac-mobile-content">
+          <div class="gac-mobile-deity">Ganesha</div>
+          <h5>Inception</h5>
+          <p>Setting vision, identifying the goal, removing obstacles — beginning with clarity and confident initiative.</p>
+        </div>
+      </div>
+      <div class="gac-mobile-connector"><i class="fa-solid fa-arrow-down"></i></div>
+
+      <div class="gac-mobile-step" data-phase="2">
+        <div class="gac-mobile-badge" style="background:#8B1A1A">2</div>
+        <div class="gac-mobile-content">
+          <div class="gac-mobile-deity">Subramaniam</div>
+          <h5>Execution</h5>
+          <p>Taking focused action, maintaining discipline, overcoming challenges — moving with precision and dedication.</p>
+        </div>
+      </div>
+      <div class="gac-mobile-connector"><i class="fa-solid fa-arrow-down"></i></div>
+
+      <div class="gac-mobile-step" data-phase="3">
+        <div class="gac-mobile-badge" style="background:#B8860B">3</div>
+        <div class="gac-mobile-content">
+          <div class="gac-mobile-deity">Parvati</div>
+          <h5>Unofficial Impact</h5>
+          <p>Creating organic influence, nurturing communities, compassionate leadership — the quiet power that transforms.</p>
+        </div>
+      </div>
+      <div class="gac-mobile-connector"><i class="fa-solid fa-arrow-down"></i></div>
+
+      <div class="gac-mobile-step" data-phase="4">
+        <div class="gac-mobile-badge" style="background:#1A237E">4</div>
+        <div class="gac-mobile-content">
+          <div class="gac-mobile-deity">Shivam</div>
+          <h5>Official Impact</h5>
+          <p>Achieving recognition, transforming reality, manifestation — when vision becomes legacy.</p>
+        </div>
+      </div>
+      <div class="gac-mobile-connector"><i class="fa-solid fa-arrow-down"></i></div>
+
+      <div class="gac-mobile-step" data-phase="5">
+        <div class="gac-mobile-badge" style="background:#2D6A4F">5</div>
+        <div class="gac-mobile-content">
+          <div class="gac-mobile-deity">Ganesha (Renewed)</div>
+          <h5>Back to Inception</h5>
+          <p>Integration of learnings, setting a new vision enriched by wisdom gathered — the cycle renews, elevated.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- PHASE DETAIL PANEL (interactive, below infographic) -->
+    <div class="gac-detail-panel mt-4 fade-up" id="gacDetailPanel" data-testid="gac-detail-panel">
+      <div class="gac-detail-inner">
+        <div class="gac-detail-num" id="gacDetailNum">1</div>
+        <div class="gac-detail-body">
+          <div class="gac-detail-deity" id="gacDetailDeity">Ganesha</div>
+          <h4 id="gacDetailTitle">Inception</h4>
+          <p id="gacDetailText">Setting vision, identifying the goal, removing obstacles — beginning with clarity and confident initiative. Ganesha, the remover of obstacles, represents that first essential step of seeing clearly where you want to go and what stands in the way.</p>
+          <div class="gac-detail-keys" id="gacDetailKeys">
+            <span>Vision</span><span>Clarity</span><span>Initiative</span><span>Beginnings</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
