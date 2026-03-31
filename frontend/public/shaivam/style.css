@@ -456,6 +456,48 @@ h3 { font-size: clamp(1.5rem, 3vw, 2.25rem); }
 .fade-up { opacity: 0; transform: translateY(30px); transition: opacity 0.65s ease, transform 0.65s ease; }
 .fade-up.visible { opacity: 1; transform: translateY(0); }
 
+/* ===== CHATUR JANMAM CARDS ===== */
+.chatur-card {
+  background-color: var(--surface-white);
+  border-radius: 8px;
+  padding: 2.5rem 1.75rem;
+  box-shadow: var(--shadow-soft);
+  transition: all 0.35s ease;
+  height: 100%;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.chatur-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary), #b34500);
+  transform: scaleX(0);
+  transition: transform 0.35s ease;
+}
+
+.chatur-card:hover { transform: translateY(-7px); box-shadow: var(--shadow-hover); }
+.chatur-card:hover::after { transform: scaleX(1); }
+
+.chatur-num {
+  width: 52px; height: 52px;
+  background: linear-gradient(135deg, var(--primary), #b34500);
+  color: #fff;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem; font-weight: 700;
+  margin: 0 auto 1.25rem;
+}
+
+.chatur-icon { font-size: 2.1rem; color: var(--primary); margin-bottom: 1rem; }
+.chatur-card h4 { font-size: 1.4rem; margin-bottom: 0.3rem; }
+.chatur-subtitle { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--primary); margin-bottom: 1rem; }
+.chatur-card p { color: var(--text-muted); font-size: 0.92rem; line-height: 1.75; }
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
   .section-padding { padding: 3rem 0; }

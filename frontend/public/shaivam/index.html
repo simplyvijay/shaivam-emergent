@@ -10,6 +10,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="https://customer-assets.emergentagent.com/job_shiva-shrine/artifacts/b4jm4a1t_Shaivam-Logo-square.png">
+  <link rel="apple-touch-icon" href="https://customer-assets.emergentagent.com/job_shiva-shrine/artifacts/b4jm4a1t_Shaivam-Logo-square.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,7 +19,10 @@
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg sticky-top" data-testid="main-navbar">
   <div class="container">
-    <a class="navbar-brand" href="index.html" data-testid="navbar-brand">ॐ Shaivam</a>
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html" data-testid="navbar-brand">
+      <img src="https://customer-assets.emergentagent.com/job_shiva-shrine/artifacts/b4jm4a1t_Shaivam-Logo-square.png" alt="Shaivam Logo" style="height:44px;width:44px;object-fit:cover;border-radius:7px;">
+      <span>Shaivam</span>
+    </a>
     <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-label="Toggle navigation" data-testid="navbar-toggler">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -157,40 +162,58 @@
   </div>
 </section>
 
-<!-- PHILOSOPHY IN PRACTICE -->
-<section class="section-padding" data-testid="practice-section">
+<!-- CHATUR JANMAM -->
+<section class="section-padding section-alt" data-testid="chatur-janmam-section">
   <div class="container">
-    <div class="row align-items-center g-5">
-      <div class="col-lg-5 fade-up">
-        <span class="section-tag">Application</span>
-        <h2>Living Shaivam Today</h2>
-        <div class="section-divider-left"></div>
-        <p style="color:var(--text-muted);">Ancient wisdom becomes most valuable when it illuminates the challenges of modern life. Shaivam offers practical frameworks for navigating the tensions that define our time.</p>
-        <a href="blog.html" class="btn-saffron mt-3" data-testid="read-blog-btn">Read Our Blog</a>
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-8 text-center">
+        <span class="section-tag">The Framework</span>
+        <h2>Chatur Janmam</h2>
+        <p style="font-size:0.78rem;color:var(--primary);text-transform:uppercase;letter-spacing:0.12em;font-weight:700;margin-top:0.25rem;">Four Pillars of Modern Life</p>
+        <div class="section-divider"></div>
+        <p class="text-muted-custom">Shaivam offers a complete framework for living — four dimensions of a fully realised human life, each essential, each incomplete without the others.</p>
       </div>
-      <div class="col-lg-7 fade-up">
-        <div class="practice-item" data-testid="practice-career">
-          <div class="practice-icon"><i class="fa-solid fa-briefcase"></i></div>
-          <div>
-            <h5>Balancing Career &amp; Inner Peace</h5>
-            <p>Shaivam's understanding of Nithyam-Nilayam — that everything must change AND everything is just right — offers a path through ambition without anxiety. Success and equanimity are not opposites.</p>
-          </div>
-        </div>
-        <div class="practice-item" data-testid="practice-relationships">
-          <div class="practice-icon"><i class="fa-solid fa-hands-holding-heart"></i></div>
-          <div>
-            <h5>Navigating Relationships with Authenticity</h5>
-            <p>The Eshwara-Parvati dynamic — destination and path, constancy and change — models how relationships can honour both individual truth and shared growth.</p>
-          </div>
-        </div>
-        <div class="practice-item" data-testid="practice-ethics">
-          <div class="practice-icon"><i class="fa-solid fa-scale-balanced"></i></div>
-          <div>
-            <h5>Ethical Decision-Making in Complexity</h5>
-            <p>When facing difficult choices, the dual lens of Sathyam (objective truth) and Nisathyam (evolving contextual truth) provides a sophisticated ethical framework that transcends simple right or wrong.</p>
-          </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-sm-6 col-lg-3 fade-up">
+        <div class="chatur-card" data-testid="pillar-shiva-janmam">
+          <div class="chatur-num">I</div>
+          <div class="chatur-icon"><i class="fa-solid fa-hands-holding-heart"></i></div>
+          <h4>Shiva Janmam</h4>
+          <div class="chatur-subtitle">Life with Empathy</div>
+          <p>To live as Shiva is to live with deep compassion — recognising the consciousness in all beings and responding from genuine care. Empathy is not weakness; it is the highest intelligence available to us.</p>
         </div>
       </div>
+      <div class="col-sm-6 col-lg-3 fade-up">
+        <div class="chatur-card" data-testid="pillar-nithya-janmam">
+          <div class="chatur-num">II</div>
+          <div class="chatur-icon"><i class="fa-solid fa-rotate"></i></div>
+          <h4>Nithya Janmam</h4>
+          <div class="chatur-subtitle">Life with Change</div>
+          <p>To live with Nithya is to embrace change as the fundamental nature of existence. Not to resist the inevitable — but to move with it, to be the river: always flowing, always the same river.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 fade-up">
+        <div class="chatur-card" data-testid="pillar-eshwara-janmam">
+          <div class="chatur-num">III</div>
+          <div class="chatur-icon"><i class="fa-solid fa-arrow-trend-up"></i></div>
+          <h4>Eshwara Janmam</h4>
+          <div class="chatur-subtitle">Life with Progress</div>
+          <p>To live as Eshwara is to continuously move toward what is greater — not from dissatisfaction, but from the joyful recognition that consciousness is always capable of growing beyond its current horizon.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 fade-up">
+        <div class="chatur-card" data-testid="pillar-sarva-janmam">
+          <div class="chatur-num">IV</div>
+          <div class="chatur-icon"><i class="fa-solid fa-infinity"></i></div>
+          <h4>Sarva Janmam</h4>
+          <div class="chatur-subtitle">Life with Freedom</div>
+          <p>To live with Sarva is to inhabit a freedom that includes all of existence — not the freedom to escape, but the freedom to engage fully, without fear, without grasping, without the need to exclude.</p>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-5">
+      <a href="about.html" class="btn-saffron" data-testid="explore-philosophy-btn">Explore the Philosophy</a>
     </div>
   </div>
 </section>
