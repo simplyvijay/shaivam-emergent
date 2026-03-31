@@ -120,7 +120,7 @@ h3 { font-size: clamp(1.5rem, 3vw, 2.25rem); }
 .hero-section {
   min-height: 100vh;
   background-image: linear-gradient(135deg, rgba(33,33,33,0.88) 0%, rgba(33,33,33,0.5) 100%),
-    url('https://images.pexels.com/photos/14276252/pexels-photo-14276252.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    url('images/hero-bg.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -152,7 +152,7 @@ h3 { font-size: clamp(1.5rem, 3vw, 2.25rem); }
 /* ===== PAGE HEADER ===== */
 .page-header {
   background: linear-gradient(135deg, rgba(33,33,33,0.95) 0%, rgba(77,38,0,0.92) 100%),
-    url('https://images.pexels.com/photos/35978529/pexels-photo-35978529.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    url('images/page-header-bg.jpg');
   background-size: cover;
   background-position: center;
   padding: 5.5rem 0 4rem;
@@ -693,7 +693,7 @@ h3 { font-size: clamp(1.5rem, 3vw, 2.25rem); }
 .faq-accordion .accordion-body { color: var(--text-muted); line-height: 1.75; font-size: 0.95rem; }
 
 /* ===== BLOG POST ===== */
-.post-header { background: linear-gradient(135deg, rgba(33,33,33,0.95) 0%, rgba(61,28,0,0.93) 100%), url('https://images.pexels.com/photos/36558486/pexels-photo-36558486.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') center/cover; padding: 5.5rem 0 3.5rem; text-align: center; }
+.post-header { background: linear-gradient(135deg, rgba(33,33,33,0.95) 0%, rgba(61,28,0,0.93) 100%), url('images/temple-architecture.jpg') center/cover; padding: 5.5rem 0 3.5rem; text-align: center; }
 .post-header h1 { color: var(--secondary); max-width: 800px; margin: 0 auto; }
 .post-meta-bar { background-color: var(--surface-white); padding: 1rem 0; border-bottom: 1px solid var(--neutral-light); }
 .post-meta-bar .meta-item { font-size: 0.85rem; color: var(--text-muted); }
