@@ -155,24 +155,6 @@ function initWisdomQuotes() {
   }
 }
 
-// ===== CONTACT FORM SUBMISSION =====
-function handleContactSubmit(e) {
-  e.preventDefault();
-  const form = document.getElementById('contact-form');
-  const successMsg = document.getElementById('contact-success');
-  const name = document.getElementById('contact-name').value.trim();
-  const email = document.getElementById('contact-email').value.trim();
-  const message = document.getElementById('contact-message').value.trim();
-  if (!name || !email || !message) return;
-
-  form.style.opacity = '0.5';
-  form.style.pointerEvents = 'none';
-  setTimeout(() => {
-    form.style.display = 'none';
-    successMsg.style.display = 'block';
-  }, 700);
-}
-
 // ===== NEWSLETTER FORM =====
 function handleNewsletterSubmit(e) {
   e.preventDefault();
@@ -221,9 +203,6 @@ document.addEventListener('DOMContentLoaded', function() {
   initNavbarScroll();
   initGAC();
   initWisdomQuotes();
-
-  const contactForm = document.getElementById('contact-form');
-  if (contactForm) contactForm.addEventListener('submit', handleContactSubmit);
 
   document.querySelectorAll('.newsletter-form').forEach(f => f.addEventListener('submit', handleNewsletterSubmit));
 
