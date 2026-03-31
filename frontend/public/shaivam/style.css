@@ -1,3 +1,12 @@
+/* ===== CUSTOM FONTS ===== */
+@font-face {
+  font-family: 'Samarkan';
+  src: url('fonts/samarkan.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* ===== ROOT VARIABLES ===== */
 :root {
   --primary: #D35400;
@@ -52,6 +61,10 @@ h3 { font-size: clamp(1.5rem, 3vw, 2.25rem); }
   font-weight: 700;
   color: var(--primary) !important;
   letter-spacing: 0.02em;
+}
+.navbar-brand > span {
+  font-family: 'Samarkan', serif;
+  letter-spacing: 0.04em;
 }
 
 .nav-link {
@@ -732,7 +745,9 @@ h3 { font-size: clamp(1.5rem, 3vw, 2.25rem); }
 
 /* ===== FOOTER ===== */
 .site-footer { background-color: var(--neutral-dark); color: rgba(250,249,246,0.72); padding: 4rem 0 2rem; }
-.footer-brand { font-family: 'Cormorant Garamond', serif; font-size: 2rem; font-weight: 700; color: var(--primary); margin-bottom: 1rem; display: block; }
+.footer-brand { font-family: 'Cormorant Garamond', serif; font-size: 2rem; font-weight: 700; color: var(--primary); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.55rem; }
+.footer-nandi-logo { width: 38px; height: 38px; object-fit: cover; border-radius: 50%; border: 2px solid rgba(211,84,0,0.4); flex-shrink: 0; }
+.footer-brand .samarkan-text { font-family: 'Samarkan', serif; letter-spacing: 0.04em; }
 .site-footer h6 { font-family: 'Lato', sans-serif; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--secondary); margin-bottom: 1rem; }
 .site-footer ul { list-style: none; padding: 0; margin: 0; }
 .site-footer ul li { margin-bottom: 0.5rem; }
