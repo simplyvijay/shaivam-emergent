@@ -12,8 +12,34 @@ A comprehensive, multi-page static website dedicated to Shaivam philosophy — a
 - **Fonts**: Cormorant Garamond (headers) + Lato (body) — Google Fonts + Samarkan (logo) — local TTF
 - **Icons**: Font Awesome 6.5 CDN
 - **Location**: `/app/frontend/public/shaivam/`
-- **Access URL**: `/shaivam/index.html` (root `/` redirects via React App.js)
+- **Access URL**: `/shaivam/` (root `/` redirects via React App.js)
 - **Domain**: `https://shaivam.info`
+
+### Folder Structure (Feb 2026 Reorganization)
+```
+/shaivam/
+├── index.html              # Home page (root, unchanged)
+├── style.css               # Shared CSS
+├── script.js               # Shared JS (updated active nav logic)
+├── sitemap.xml             # Updated with clean URLs
+├── robots.txt
+├── images/                 # Shared images (logo, backgrounds, shared content)
+├── fonts/                  # Samarkan font
+├── about/index.html        # About page
+├── temples/
+│   ├── index.html          # Temples page
+│   └── images/             # Temple-specific images (5 images)
+├── videos/index.html
+├── blog/
+│   ├── index.html          # Blog listing
+│   ├── dual-monism/index.html     # was post1.html
+│   ├── ganesha-gift/index.html    # was post2.html
+│   └── navagraham/index.html      # was post3.html
+├── contact/index.html
+└── privacy/index.html
+```
+
+**URL Strategy:** Relative paths throughout (`../about/`, `../../images/logo.png`). Canonical/OG URLs use clean absolute format (`https://shaivam.info/about`).
 
 ---
 
