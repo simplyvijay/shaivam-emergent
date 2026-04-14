@@ -1,0 +1,41 @@
+{
+  "summary": "Frontend-only testing of new folder-based URL structure for Shaivam static site. All 10 pages load correctly at their new folder URLs. Nav active states, footer links, and blog post back links all work correctly with relative paths.",
+  "backend_issues": {
+    "critical": [],
+    "minor": []
+  },
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": [
+      {
+        "screen": "Home page - navbar",
+        "issues": ["Home nav link uses href='index.html' instead of './' — works from home but from depth-1/2 the resolved href may differ. From depth-2 it correctly resolves to '../../' so no actual bug."]
+      }
+    ]
+  },
+  "test_report_links": [],
+  "action_items": [],
+  "critical_code_review_comments": [
+    "Images on home, about, temples pages use loading='lazy' — playwright networkidle check flagged them as broken before scroll, but after scrolling they all load correctly (curl returns 200). Not a real issue."
+  ],
+  "updated_files": [],
+  "success_rate": {"backend": "N/A", "frontend": "100%"},
+  "test_credentials": "N/A - static site",
+  "seed_data_creation": "",
+  "retest_needed": false,
+  "main_agent_can_self_test": false,
+  "context_for_next_testing_agent": "All folder-based URL restructure is working correctly. Pages tested: /, /about/, /temples/, /videos/, /blog/, /blog/dual-monism/, /blog/ganesha-gift/, /blog/navagraham/, /contact/, /privacy/. Active nav states correct on all pages. Footer links use correct relative paths. Images are lazy-loaded (loading='lazy') so playwright checks needed scroll before all images resolve.",
+  "pages_tested": {
+    "/shaivam/": {"status": 200, "active_nav": "Home", "images": "OK (lazy-loaded)"},
+    "/shaivam/about/": {"status": 200, "active_nav": "About", "images": "OK (lazy-loaded)"},
+    "/shaivam/temples/": {"status": 200, "active_nav": "Temples", "images": "OK after scroll (lazy-loaded)"},
+    "/shaivam/videos/": {"status": 200, "active_nav": "Videos", "images": "OK"},
+    "/shaivam/blog/": {"status": 200, "active_nav": "Blog", "read_more_links": "OK - relative paths"},
+    "/shaivam/blog/dual-monism/": {"status": 200, "active_nav": "Blog", "back_link": "OK (href='../')"},
+    "/shaivam/blog/ganesha-gift/": {"status": 200, "active_nav": "Blog", "images": "OK"},
+    "/shaivam/blog/navagraham/": {"status": 200, "active_nav": "Blog", "images": "OK"},
+    "/shaivam/contact/": {"status": 200, "active_nav": "Connect"},
+    "/shaivam/privacy/": {"status": 200, "active_nav": "none (expected)"}
+  }
+}
