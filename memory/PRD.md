@@ -9,10 +9,11 @@ A comprehensive, multi-page static website dedicated to Shaivam philosophy — a
 
 - **Type**: Static HTML website (no backend, no database)
 - **Stack**: HTML5 + CSS3 + JavaScript (ES6) + Bootstrap 5 CDN
-- **Fonts**: Cormorant Garamond (headers) + Lato (body) — Google Fonts
+- **Fonts**: Cormorant Garamond (headers) + Lato (body) — Google Fonts + Samarkan (logo) — local TTF
 - **Icons**: Font Awesome 6.5 CDN
 - **Location**: `/app/frontend/public/shaivam/`
 - **Access URL**: `/shaivam/index.html` (root `/` redirects via React App.js)
+- **Domain**: `https://shaivam.info`
 
 ---
 
@@ -26,32 +27,41 @@ A comprehensive, multi-page static website dedicated to Shaivam philosophy — a
 
 ---
 
-## Pages Implemented (Date: Feb 2026)
+## Pages Implemented (as of Feb 2026)
 
 | File | Title | Status |
 |------|-------|--------|
-| `index.html` | Home — Hero, Intro, 4 Concept Cards, Practice, Quote, Blog Preview, Newsletter | ✅ Done |
+| `index.html` | Home — Hero, Intro, 4 Concept Cards, Practice, Rotating Wisdom Quotes, Blog Preview, Newsletter | ✅ Done |
 | `about.html` | About — What is Shaivam, Dual Monism, Two Domains, Three Paths, Key Concepts, Deity Archetypes, Navagraham, **Goal Achievement Cycle** | ✅ Done |
-| `videos.html` | Videos — 5 Bootstrap tab categories, 18 placeholder video cards | ✅ Done |
+| `temples.html` | Temples — 7 sacred shrines with philosophical content (Visweswaram, Jambukeshwaram, Brihadeshwaram, Arunachaleshwaram, Sudareshwaram, Kapaleeshwaram, Viswesa) | ✅ Done (Feb 2026) |
+| `videos.html` | Videos — 3 Bootstrap tab categories, 9 real YouTube embeds | ✅ Done |
 | `blog.html` | Blog — Featured post, 6 blog cards, categories sidebar, newsletter | ✅ Done |
 | `post1.html` | Blog: Understanding Dual Monism (~1,200 words) | ✅ Done |
 | `post2.html` | Blog: Ganesha's Gift (~1,100 words) | ✅ Done |
 | `post3.html` | Blog: The Navagraham (~1,300 words) | ✅ Done |
-| `contact.html` | Contact — Static form, FAQ accordion (6 items), Community, Newsletter | ✅ Done |
+| `contact.html` | Contact — Formspree AJAX form, FAQ accordion (6 items), Community, Newsletter | ✅ Done |
+| `privacy.html` | Privacy Policy — Full policy page linked in all footers | ✅ Done |
 | `style.css` | Custom CSS with CSS variables, animations, all components | ✅ Done |
-| `script.js` | JS: scroll animations, contact form, newsletter, navbar scroll | ✅ Done |
+| `script.js` | JS: scroll animations, contact form, newsletter, navbar scroll, daily wisdom quotes | ✅ Done |
+| `sitemap.xml` | SEO sitemap including all 10 pages | ✅ Done |
+| `robots.txt` | Standard robots file | ✅ Done |
 
 ---
 
 ## Core Requirements (Static)
-- Multi-page website about Shaivam philosophy
-- Pure HTML/CSS/JS + Bootstrap 5
-- English content with Sanskrit/Tamil terms explained
-- Placeholder video cards
-- 3 sample blog posts with full content
-- Text-based logo: "ॐ Shaivam"
-- Static contact form with success message
-- Responsive design (mobile-first)
+- Multi-page website about Shaivam philosophy ✅
+- Pure HTML/CSS/JS + Bootstrap 5 ✅
+- English content with Sanskrit/Tamil terms explained ✅
+- Real YouTube video embeds (9 videos, 3 categories) ✅
+- 3 sample blog posts with full content ✅
+- Text-based logo: "Shaivam" in Samarkan font ✅
+- Formspree-powered contact form with AJAX ✅
+- Responsive design (mobile-first) ✅
+- All images localized (20+ images in `/images/`) ✅
+- SEO: OG tags, Twitter cards, JSON-LD schema on all pages ✅
+- sitemap.xml + robots.txt ✅
+- Privacy policy page ✅
+- Temples page with 7 shrine sections ✅
 
 ---
 
@@ -59,45 +69,67 @@ A comprehensive, multi-page static website dedicated to Shaivam philosophy — a
 
 ### Design System
 - CSS custom properties (color variables)
-- Cormorant Garamond serif headers + Lato body
+- Cormorant Garamond serif headers + Lato body + Samarkan logo
 - Saffron/ivory/indigo brand palette
 - Micro-animations: fade-up scroll reveal, card hover (translateY + shadow)
-- Sticky navbar with scroll shadow effect
+- Sticky navbar with scroll shadow effect + Temples nav link
 - Fully responsive layout
 
-- **Goal Achievement Cycle**: 5-phase interactive pentagon infographic (Inception/Ganesha → Execution/Subramaniam → Unofficial Impact/Parvati → Official Impact/Shivam → Back to Inception), SVG arrows, hover-activated detail panel, mobile vertical flow (Feb 2026)
+### Temples Page (Feb 2026) — NEW
+- 7 temple sections with alternating left/right image/text layout
+- Quick-navigation card grid at top (links to each temple anchor)
+- Each temple has: numbered badge, element badge, location line, h2, 3 paragraphs, styled blockquote
+- 4 new temple images downloaded locally (temple-varanasi.jpg, temple-thanjavur.jpg, temple-arunachala.jpg, temple-kanchipuram.jpg)
+- "The Temple Within" closing philosophical section
+- Full SEO meta, OG, Twitter Card, JSON-LD
+- "Temples" nav link added to all 10 HTML files (navbar + footer)
+- sitemap.xml updated to include temples.html
+
+### 7 Temples Content
+1. **Visweswaram** (Varanasi) — Akasha / Space element / Liberation
+2. **Jambukeshwaram** (Thiruvanaikaval) — Apah / Water element / Shakti's supremacy
+3. **Brihadeshwaram** (Thanjavur) — Human Achievement as Divine Offering / Goal Achievement Cycle
+4. **Arunachaleshwaram** (Tiruvannamalai) — Agni / Fire element / Self-inquiry
+5. **Sudareshwaram** (Madurai) — Bhakti / Devotion / Divine Love
+6. **Kapaleeshwaram** (Mylapore) — Transformation / Return / Parvati's penance
+7. **Viswesa / Ekambareshwaram** (Kanchipuram) — Prithvi / Earth element / Foundation
+
+### Previously Completed
+- **Goal Achievement Cycle**: 5-phase interactive pentagon infographic (Inception/Ganesha → Execution/Subramaniam → Unofficial Impact/Parvati → Official Impact/Shivam → Back to Inception), SVG arrows, hover-activated detail panel, mobile vertical flow
 - **Hero**: Nataraja background with dark gradient overlay, dual CTA buttons
-- **Core Concepts**: 4 cards with saffron left-border hover animation
-- **Dual Monism Grid**: 6 dual pair cards (Viswesam/Eshwaram, Sathyam/Nisathyam, etc.)
-- **Two Domains Table**: Comparison table Viswesam vs Eshwaram
-- **Three Paths**: 3 numbered path cards
-- **Deity Archetypes**: 8 deity cards with dark gradient headers
-- **Navagraham**: 9-card grid (Surya, Chandra, Mangala, Budha, Guru, Sukra, Shani, Rahu, Ketu)
-- **Video Gallery**: Bootstrap 5 tabs (5 categories, 18 video cards with play overlays)
-- **Blog**: Featured post, 6 cards, categories sidebar, pagination
-- **Contact**: Bootstrap form, static JS success message, FAQ accordion
-- **Footer**: Dark footer with quick links, philosophy links, wisdom quote
+- **Rotating Wisdom Quotes**: 6 quotes, 5.5s auto-advance, nav dots on homepage
+- **Video Gallery**: Bootstrap 5 tabs (3 categories, 9 real YouTube embeds)
+- **Contact Form**: Formspree AJAX (endpoint: xpqorylp), button spinner, success state
+- **Image Optimization**: 20+ images downloaded locally, compressed with Pillow (36% bundle reduction)
+- **Samarkan Font**: Local TTF loaded for logo text across all pages
+- **Nandi Footer**: Nandi image in footer brand across all pages
+- **SEO**: Complete OG, Twitter Card, JSON-LD schema on all pages
+
+---
+
+## 3rd Party Integrations
+- **Formspree**: Contact form endpoint `https://formspree.io/f/xpqorylp` (POST)
 
 ---
 
 ## Prioritised Backlog
 
-### P0 — Already Done
-- All 8 pages built and tested ✅
-- Navigation working ✅
-- Contact form with success message ✅
-- Video tabs working ✅
-- Goal Achievement Cycle interactive infographic (about.html) ✅
-- GAC auto-play animation via IntersectionObserver ✅
-- Rotating wisdom quotes (6 quotes, 5.5s auto-advance, nav dots) ✅
-- SEO meta tags: OG, Twitter Card, JSON-LD schema on all 8 pages ✅
-- sitemap.xml + robots.txt ✅
+### P0 — Completed
+- All 10 pages built and tested ✅
+- Navigation working with Temples link ✅
+- Temples page with 7 detailed sections ✅
+- Contact form with Formspree AJAX ✅
+- Goal Achievement Cycle interactive infographic ✅
+- Rotating wisdom quotes ✅
+- SEO meta tags + sitemap + robots.txt ✅
+- Privacy policy page ✅
+- All images localized ✅
+- Samarkan font integrated ✅
+- YouTube embeds (9 real videos) ✅
 
 ### P1 — Next Phase
-- Add real YouTube video embeds when videos are produced
-- Add 4-6 more blog post pages
-- Add email functionality to contact form (Resend/SendGrid integration)
-- Add a Navagraham self-assessment quiz (interactive JS)
+- Add 4–6 more blog posts (topics outlined in brief)
+- Google Search Console verification code
 
 ### P2 — Future Features
 - Tamil language toggle
@@ -106,12 +138,5 @@ A comprehensive, multi-page static website dedicated to Shaivam philosophy — a
 - Community discussion forum
 - Dark mode toggle
 - Hover tooltip definitions for Sanskrit/Tamil terms
-
----
-
-## Next Tasks
-1. Replace placeholder video cards with real YouTube embeds
-2. Add more blog post pages (topics outlined in brief)
-3. Connect contact form to email service
-4. Add sitemap.xml and SEO meta tags
-5. Consider adding a daily wisdom rotating quote on homepage
+- GitHub Actions CI/CD for auto-deploy
+- Navagraham self-assessment quiz
