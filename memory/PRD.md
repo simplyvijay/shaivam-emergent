@@ -35,6 +35,7 @@ A comprehensive, multi-page static website dedicated to Shaivam philosophy — a
 │   ├── dual-monism/index.html     # was post1.html
 │   ├── ganesha-gift/index.html    # was post2.html
 │   └── navagraham/index.html      # was post3.html
+│   └── ruparupam/index.html       # NEW — Ruparupam (Apr 2026)
 ├── contact/index.html
 └── privacy/index.html
 ```
