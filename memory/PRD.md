@@ -157,7 +157,7 @@ A comprehensive, multi-page static website dedicated to Shaivam philosophy — a
 - YouTube embeds (9 real videos) ✅
 
 ### P1 — Next Phase
-- Update Homepage blog preview cards to show 3 most recent posts (Pradosham, Lalitha, Ruparupam)
+- Update Homepage blog preview cards to show 3 most recent posts (Pradosham, Lalitha, Ruparupam) ✅ (Apr 2026)
 - Add 4–6 more blog posts (topics outlined in brief)
 - Google Search Console verification code
 
