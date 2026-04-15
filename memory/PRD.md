@@ -36,6 +36,7 @@ A comprehensive, multi-page static website dedicated to Shaivam philosophy — a
 │   ├── ganesha-gift/index.html    # was post2.html
 │   └── navagraham/index.html      # was post3.html
 │   └── ruparupam/index.html       # NEW — Ruparupam (Apr 2026)
+│   └── lalitha/index.html         # NEW — Lalitha (Apr 2026)
 ├── contact/index.html
 └── privacy/index.html
 ```
