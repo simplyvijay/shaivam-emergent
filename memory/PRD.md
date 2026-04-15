@@ -146,6 +146,7 @@ A comprehensive, multi-page static website dedicated to Shaivam philosophy — a
 - All 10 pages built and tested ✅
 - Navigation working with Temples link ✅
 - Temples page with 7 detailed sections ✅
+- Temples page intro rewritten: title → "Significance of Temples", content → convergence of Tri-Margam, Soujanya-Margam, Viswesam, Eshwaram (Feb 2026) ✅
 - Contact form with Formspree AJAX ✅
 - Goal Achievement Cycle interactive infographic ✅
 - Rotating wisdom quotes ✅
@@ -156,10 +157,12 @@ A comprehensive, multi-page static website dedicated to Shaivam philosophy — a
 - YouTube embeds (9 real videos) ✅
 
 ### P1 — Next Phase
+- Update Homepage blog preview cards to show 3 most recent posts (Pradosham, Lalitha, Ruparupam)
 - Add 4–6 more blog posts (topics outlined in brief)
 - Google Search Console verification code
 
 ### P2 — Future Features
+- Add `vercel.json` for clean-URL routing on Vercel deployment
 - Tamil language toggle
 - Search functionality for blog
 - Event calendar
