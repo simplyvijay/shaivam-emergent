@@ -155,9 +155,10 @@ A comprehensive, multi-page static website dedicated to Shaivam philosophy — a
 - All images localized ✅
 - Samarkan font integrated ✅
 - YouTube embeds (9 real videos) ✅
+- Homepage blog preview cards updated to 3 most recent posts (Pradosham, Lalitha, Ruparupam) ✅ (Apr 2026)
+- Blog post `Triyambukeshwaram: Always Constant, Always Changing` created with image, 9 sections, full ToC, key terms sidebar, sitemap updated (Apr 2026) ✅
 
 ### P1 — Next Phase
-- Update Homepage blog preview cards to show 3 most recent posts (Pradosham, Lalitha, Ruparupam) ✅ (Apr 2026)
 - Add 4–6 more blog posts (topics outlined in brief)
 - Google Search Console verification code
 
