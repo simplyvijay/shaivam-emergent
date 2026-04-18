@@ -156,7 +156,9 @@ A comprehensive, multi-page static website dedicated to Shaivam philosophy — a
 - Samarkan font integrated ✅
 - YouTube embeds (9 real videos) ✅
 - Homepage blog preview cards updated to 3 most recent posts (Pradosham, Lalitha, Ruparupam) ✅ (Apr 2026)
-- Blog post `Triyambukeshwaram: Always Constant, Always Changing` created with image, 9 sections, full ToC, key terms sidebar, sitemap updated (Apr 2026) ✅
+- RSS feed (`/blog/feed.xml`) with all 7 posts (full content, RFC 822 dates, managing editor, atom:link) ✅ (Apr 2026)
+- RSS autodiscovery `<link>` tag added to all 14 HTML pages ✅ (Apr 2026)
+- "Subscribe via RSS" button on blog listing page header ✅ (Apr 2026)
 
 ### P1 — Next Phase
 - Add 4–6 more blog posts (topics outlined in brief)
