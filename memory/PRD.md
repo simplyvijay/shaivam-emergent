@@ -156,9 +156,11 @@ A comprehensive, multi-page static website dedicated to Shaivam philosophy — a
 - Samarkan font integrated ✅
 - YouTube embeds (9 real videos) ✅
 - Homepage blog preview cards updated to 3 most recent posts (Pradosham, Lalitha, Ruparupam) ✅ (Apr 2026)
-- RSS feed (`/blog/feed.xml`) with all 7 posts (full content, RFC 822 dates, managing editor, atom:link) ✅ (Apr 2026)
-- RSS autodiscovery `<link>` tag added to all 14 HTML pages ✅ (Apr 2026)
-- "Subscribe via RSS" button on blog listing page header ✅ (Apr 2026)
+- Temples page removed from navigation across all 14 pages (footer links too); `temples/index.html` retained as orphan ✅ (Apr 2026)
+- Blog post `Significance of Temples` created from temples intro content, gopuram.jpg image, category Sacred Spaces ✅ (Apr 2026)
+- RSS feed regenerated with 8 posts (significance-of-temples now #1) ✅ (Apr 2026)
+- Sitemap updated: temples removed, significance-of-temples added ✅ (Apr 2026)
+- Homepage + blog listing updated: Significance of Temples as featured/card #1 ✅ (Apr 2026)
 
 ### P1 — Next Phase
 - Add 4–6 more blog posts (topics outlined in brief)
