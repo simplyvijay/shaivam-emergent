@@ -146,8 +146,9 @@ A comprehensive, multi-page static website dedicated to Shaivam philosophy — a
 - All 10 pages built and tested ✅
 - Navigation working with Temples link ✅
 - Temples page with 7 detailed sections ✅
-- About page Dual Monism section: 6 simple cards replaced with detailed 3-column table of all 7 pairs from docx (Sathyam–Nisathyam, Eshwara–Parvathi, Rupam–Arupam, Nithyam–Nilayam, Sarvam–Nirvaanam, Swarnam–Arnam, Bhrammam–Nilayam) ✅ (May 2026)
-- About page footer: lingering Temples link removed ✅ (May 2026)
+- About page Dual Monism: redesigned as 7 stacked dm-cards (header strip, 2-col realities, combined meaning footer) with hover animation ✅ (May 2026)
+- Temples folder deleted from codebase ✅ (May 2026)
+- Canonical URLs: trailing slash added to all 14 pages; og:url and JSON-LD url fields also fixed ✅ (May 2026)
 - Contact form with Formspree AJAX ✅
 - Goal Achievement Cycle interactive infographic ✅
 - Rotating wisdom quotes ✅
