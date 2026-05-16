@@ -144,25 +144,17 @@ A comprehensive, multi-page static website dedicated to Shaivam philosophy — a
 
 ### P0 — Completed
 - All 10 pages built and tested ✅
-- Navigation working with Temples link ✅
-- Temples page with 7 detailed sections ✅
-- About page Dual Monism: redesigned as 7 stacked dm-cards (header strip, 2-col realities, combined meaning footer) with hover animation ✅ (May 2026)
+- Navigation working; Temples page later removed ✅
+- About page Dual Monism: redesigned as 7 stacked dm-cards ✅ (May 2026)
 - Temples folder deleted from codebase ✅ (May 2026)
-- Canonical URLs: trailing slash added to all 14 pages; og:url and JSON-LD url fields also fixed ✅ (May 2026)
+- Canonical URLs: trailing slash standardised across all pages ✅ (May 2026)
 - Contact form with Formspree AJAX ✅
 - Goal Achievement Cycle interactive infographic ✅
 - Rotating wisdom quotes ✅
 - SEO meta tags + sitemap + robots.txt ✅
-- Privacy policy page ✅
-- All images localized ✅
-- Samarkan font integrated ✅
-- YouTube embeds (9 real videos) ✅
-- Homepage blog preview cards updated to 3 most recent posts (Pradosham, Lalitha, Ruparupam) ✅ (Apr 2026)
-- Temples page removed from navigation across all 14 pages (footer links too); `temples/index.html` retained as orphan ✅ (Apr 2026)
-- Blog post `Significance of Temples` created from temples intro content, gopuram.jpg image, category Sacred Spaces ✅ (Apr 2026)
-- RSS feed regenerated with 8 posts (significance-of-temples now #1) ✅ (Apr 2026)
-- Sitemap updated: temples removed, significance-of-temples added ✅ (Apr 2026)
-- Homepage + blog listing updated: Significance of Temples as featured/card #1 ✅ (Apr 2026)
+- All images localized, Samarkan font, YouTube embeds ✅
+- RSS feed with 9 posts (105KB, valid XML, full content) ✅ (May 2026)
+- Blog posts published (9 total): Dual Monism, Ganesha's Gift, Navagraham, Ruparupam, Lalitha, Pradosham, Triyambukeshwaram, Significance of Temples, Modernity ✅
 
 ### P1 — Next Phase
 - Add 4–6 more blog posts (topics outlined in brief)
