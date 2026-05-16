@@ -154,8 +154,9 @@ A comprehensive, multi-page static website dedicated to Shaivam philosophy — a
 - SEO meta tags + sitemap + robots.txt ✅
 - All images localized, Samarkan font, YouTube embeds ✅
 - RSS feed with 9 posts (105KB, valid XML, full content) ✅ (May 2026)
-- Blog posts published (9 total): Dual Monism, Ganesha's Gift, Navagraham, Ruparupam, Lalitha, Pradosham, Triyambukeshwaram, Significance of Temples, Modernity ✅
+- Blog posts published (10 total): Dual Monism, Ganesha's Gift, Navagraham, Ruparupam, Lalitha, Pradosham, Triyambukeshwaram, Significance of Temples, Modernity, Eshwara and Parvathi ✅
 - Ganesha's Gift blog post: replaced header image with user-provided `ganesha.jpg`, updated OG/Twitter tags + RSS feed enclosure ✅ (May 2026)
+- Eshwara and Parvathi: created full blog post at `/blog/eshwara-parvathi/` from uploaded docx; image `eshwara-parvathi.jpg` used as featured image and social preview (OG/Twitter); blog listing card updated; RSS feed now has 10 items ✅ (May 2026)
 
 ### P1 — Next Phase
 - Add 4–6 more blog posts (topics outlined in brief)
